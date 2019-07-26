@@ -1,0 +1,51 @@
+.btn:hover, .btn:focus, .btn:active {
+  box-shadow:none;
+}
+
+.navbar {
+  border-bottom:1px solid #ccccca;
+}
+
+ul.social-icon {
+  display:block;
+  margin-bottom:0;
+}
+
+ul.social-icon li {
+  display:inline-block;
+  margin-right:5px;
+  padding:5px;
+}
+
+.btn:hover, .btn:focus, .btn {
+  transition:all .4s ease-in-out;
+}
+
+label {
+  color:#5e5e65;
+  font-size:medium;
+  font-weight:500;
+}
+
+.submit {
+  padding-top:10px;
+  padding-bottom:10px;
+  text-transform:uppercase;
+}
+
+.form-wrapper {
+  border-radius:5px;
+  padding:30px 10px;
+  border:1px solid #a4a4a4;
+  min-width:378px;
+  background-color:#ffffff;
+}
+
+.form .form-control {
+  height:48px;
+}
+
+.form .form-control:hover, .form .form-control:focus {
+  box-shadow:none;
+}
+
