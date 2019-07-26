@@ -33,19 +33,3 @@ label {
   text-transform:uppercase;
 }
 
-.form-wrapper {
-  border-radius:5px;
-  padding:30px 10px;
-  border:1px solid #a4a4a4;
-  min-width:378px;
-  background-color:#ffffff;
-}
-
-.form .form-control {
-  height:48px;
-}
-
-.form .form-control:hover, .form .form-control:focus {
-  box-shadow:none;
-}
-

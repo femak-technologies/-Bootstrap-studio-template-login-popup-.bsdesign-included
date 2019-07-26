@@ -6,46 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body style="background-color:rgb(248,248,248);">
-    <nav class="navbar navbar-light navbar-expand-md" style="background-color:#ffffff;">
+<body>
+    <nav class="navbar navbar-light navbar-expand-md">
         <div class="container-fluid"><a class="navbar-brand" href="#">Logo</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
                 id="navcol-1">
-                <ul class="nav navbar-nav ml-auto">
+                <ul class="nav navbar-nav mx-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Home</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#">Contact</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#">Help</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#">Faq</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#">About</a></li>
-                </ul><a class="btn btn-primary" role="button" href="#">Register</a></div>
+                </ul><button class="btn btn-primary ml-auto" type="button" data-target="#login" data-toggle="modal">Login</button></div>
         </div>
     </nav>
-    <div class="container" style="margin-top:43px;">
-        <div class="row justify-content-center" style="min-height:350px;">
-            <div class="col-auto">
-                <div class="form-wrapper">
-                    <form method="post" enctype="application/x-www-form-urlencoded" class="form">
-                        <h3 class="text-primary">Welcome, Back</h3>
-                        <p class="text-muted" style="margin-bottom:22px;">Femak Technoloies Login page&nbsp;</p>
-                        <div class="form-group"><label>Email Address</label><input class="form-control" type="email" placeholder="Email"></div>
-                        <div class="form-group"><label>Password</label><input class="form-control" type="email" placeholder="Password"></div>
+    <div class="container">
+        <div class="row justify-content-center align-items-center" style="min-height:350px;">
+            <div class="col">
+                <h1 class="text-warning" style="margin-bottom:35px;margin-top:44px;">FEMAK Technologies</h1>
+                <h4>Modal login&nbsp;</h4>
+                <p class="text-secondary">Click on login and see how it work</p>
+                <p>Contacts</p>
+                <ul class="list-unstyled">
+                    <li><a href="https://wa.me/2348136100678"><i class="fa fa-whatsapp"></i>&nbsp;+2348136100678</a></li>
+                    <li><a href="https://facebook.com/Femakengineering/"><i class="fa fa-facebook"></i>&nbsp;@femakengineering</a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i>&nbsp;@FEMAK Technologies</a>&nbsp;<br></li>
+                    <li><a href="#"><i class="fa fa-github"></i>&nbsp;@FEMAK Technologies<br></a>&nbsp;&nbsp;<br></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="login" style="background-color:rgba(44,44,44,0.95);">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Welcome</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <form method="post" enctype="application/x-www-form-urlencoded">
+                        <div class="form-group"><label>Email Address</label><input class="form-control" type="email" placeholder="Email"><small class="form-text text-danger">Input a valid email Address</small></div>
+                        <div class="form-group"><label>Password</label><input class="form-control" type="email" placeholder="Password"><small class="form-text text-danger">Password not match</small></div>
                         <div class="form-group">
                             <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Remeber password?</label></div>
                         </div>
                         <hr>
-                        <div class="form-group">
-                            <div style="text-align:center;"><button class="btn btn-primary btn-block submit" type="button">Login</button></div>
-                        </div><a href="#">Forgot password?</a></form>
+                        <div style="text-align:center;"><button class="btn btn-success btn-block submit" type="button">Login</button></div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-    <footer style="margin-top:14px;">
-        <div style="padding:15px 20px;background-color:#080808;"></div>
-    </footer>
+    <footer></footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
